@@ -1,0 +1,1 @@
+# Aimeos headless distribution
