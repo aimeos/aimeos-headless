@@ -108,6 +108,10 @@ Made with <fg=green>love</> by the Aimeos community. Be a part of it!
 		}
 		$config['MAIL_PASSWORD'] = $io->askAndHideAnswer( '- MAIL_PASSWORD: ', $config['MAIL_PASSWORD'] );
 
+
+		$config['JWT_TOKEN'] = \Illuminate\Support\Str::random( 64 );
+
+
 		if( file_put_contents( $filename, self::createIniString( $config ) ) === false ) {
 			throw \RuntimeException( sprintf( 'Can not write file "%1$s"', $filename ) );
 		}
