@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "aimeos/aimeos-headless",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "Aimeos headless ecommerce system",
+    "keywords": ["aimeos", "headless", "ecommerce", "shop", "laravel", "distribution"],
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
