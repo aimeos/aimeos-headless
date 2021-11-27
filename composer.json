@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "aimeos/aimeos-laravel": "dev-master",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/breeze": "^1.4",
@@ -45,7 +46,12 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
+            "@php artisan key:generate --ansi",
+            "App\\Composer::configure",
+            "@php artisan migrate",
+            "App\\Composer::setup",
+            "App\\Composer::account",
+            "App\\Composer::success"
         ]
     },
     "extra": {
