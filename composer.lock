@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab83921678ee9d3ddee583fd3d182a98",
+    "content-hash": "7912a7f3e8af8e859a7b219dc41fac87",
     "packages": [
         {
             "name": "aimeos/ai-admin-jqadm",
