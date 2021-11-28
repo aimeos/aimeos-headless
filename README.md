@@ -85,8 +85,6 @@ After the installation, you can test the Aimeos JSON REST API by calling the URL
 VHost in your browser. If you use the integrated PHP web server, you should browse
 this URL: [http://127.0.0.1:8000/jsonapi](http://127.0.0.1:8000/jsonapi)
 
-[![Aimeos frontend](https://aimeos.org/fileadmin/aimeos.org/images/aimeos-frontend.jpg?2021.07)](http://laravel.demo.aimeos.org/)
-
 ## Backend
 
 The Aimeos administration interface will be available at `/admin` in your VHost. When using
