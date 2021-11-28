@@ -57,7 +57,7 @@ On the CLI, execute this command for a complete installation including a working
 
 ```
 wget https://getcomposer.org/download/latest-stable/composer.phar -O composer
-php composer create-project aimeos/aimeos-headless headless
+php composer create-project aimeos/aimeos-headless:dev-master headless
 ```
 
 You will be asked for the parameters of your database and mail server as well as an
