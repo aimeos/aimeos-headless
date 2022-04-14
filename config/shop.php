@@ -17,6 +17,7 @@ return [
 		'account' => false,
 		'default' => false,
 		'supplier' => false,
+		'legal' => false,
 		'update' => [],
 	],
 
