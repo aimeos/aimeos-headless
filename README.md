@@ -87,6 +87,27 @@ this URL: [http://127.0.0.1:8000/jsonapi](http://127.0.0.1:8000/jsonapi)
 
 Learn how to use the [JSON REST API](https://aimeos.org/docs/latest/frontend/jsonapi/)
 
+### Authenticate
+
+To authenticate using e-mail and password, send a POST request:
+
+```bash
+curl -X POST "http://127.0.0.1:8000/api/login?email=me@localhost&password=test"
+```
+
+If the authentication was successful, the API will return with a response like this:
+
+```json
+{"access_token":"eyJ0eXAiOiJKV...","token_type":"bearer","expires_in":3600}
+```
+
+Use this access token in all further requests as HTTP header:
+
+```bash
+curl -X POST "http://127.0.0.1:8000/api/me" -H "Authorization: Bearer eyJ0eXAiOiJKV..."
+```
+
+
 ## Backend
 
 The Aimeos administration interface will be available at `/admin` in your VHost. When using
