@@ -7,7 +7,7 @@
     "require": {
         "php": "^8.0.10",
         "php-open-source-saver/jwt-auth": "^2.0",
-        "aimeos/aimeos-laravel": "^2022.04",
+        "aimeos/aimeos-laravel": "dev-master",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.2",
         "laravel/sanctum": "^2.14.1",
