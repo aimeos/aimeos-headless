@@ -39,6 +39,7 @@ Congratulations! You successfully set up your <fg=green>Aimeos</> shop!
 Made with <fg=green>love</> by the Aimeos community. Be a part of it!
 
 <fg=cyan>Setup cronjobs:</> https://aimeos.org/docs/latest/laravel/setup/#cronjobs
+<fg=cyan>JSON API docs:</> https://aimeos.org/docs/latest/frontend/jsonapi/
 ';
 
 
@@ -111,12 +112,13 @@ Made with <fg=green>love</> by the Aimeos community. Be a part of it!
 		$config['MAIL_PASSWORD'] = $io->askAndHideAnswer( '- MAIL_PASSWORD: ', $config['MAIL_PASSWORD'] );
 
 
-		$config['JWT_TOKEN'] = \Illuminate\Support\Str::random( 64 );
-
-
 		if( file_put_contents( $filename, self::createIniString( $config ) ) === false ) {
 			throw \RuntimeException( sprintf( 'Can not write file "%1$s"', $filename ) );
 		}
+
+		self::executeCommand( $event, 'vendor:publish', ['--provider="PHPOpenSourceSaver\JWTAuth\Providers\LaravelServiceProvider"'] );
+		self::executeCommand( $event, 'jwt:secret' );
+		self::executeCommand( $event, 'jwt:generate-certs' );
 	}
 
 
