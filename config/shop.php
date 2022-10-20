@@ -13,11 +13,11 @@ return [
 		// 'admin' => ['prefix' => 'admin', 'middleware' => ['web']],
 		// 'jqadm' => ['prefix' => 'admin/{site}/jqadm', 'middleware' => ['web', 'auth']],
 		// 'jsonadm' => ['prefix' => 'admin/{site}/jsonadm', 'middleware' => ['web', 'auth']],
-		'jsonapi' => ['prefix' => 'jsonapi', 'middleware' => ['api']],
+		'jsonapi' => ['prefix' => 'jsonapi', 'middleware' => ['api', 'auth.api']],
 		'account' => false,
 		'default' => false,
 		'supplier' => false,
-		'legal' => false,
+		'page' => false,
 		'update' => [],
 	],
 
