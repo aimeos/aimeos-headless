@@ -43,7 +43,7 @@ Aimeos is a full-featured e-commerce package:
 
 The Aimeos shop distribution requires:
 - Linux/Unix, WAMP/XAMP or MacOS environment
-- PHP >= 7.3
+- PHP >= 8.0.10
 - MySQL >= 5.7.8, MariaDB >= 10.2.2
 - Web server (Apache, Nginx or integrated PHP web server for testing)
 
@@ -57,7 +57,7 @@ On the CLI, execute this command for a complete installation including a working
 
 ```
 wget https://getcomposer.org/download/latest-stable/composer.phar -O composer
-php composer create-project aimeos/aimeos-headless:dev-master headless
+php composer create-project aimeos/aimeos-headless headless
 ```
 
 You will be asked for the parameters of your database and mail server as well as an
