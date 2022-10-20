@@ -15,10 +15,11 @@ and customize anything to your needs.
 Aimeos is a full-featured e-commerce package:
 
 * JSON REST API based on jsonapi.org
+* GraphQL API for administration
 * Multi vendor, multi channel and multi warehouse
 * From one to 1,000,000,000+ items
 * Extremly fast down to 20ms
-* For multi-tentant e-commerce SaaS solutions
+* For multi-tentant e-commerce SaaS solutions with unlimited vendors
 * Bundles, vouchers, virtual, configurable, custom and event products
 * Subscriptions with recurring payments
 * Block/tier pricing out of the box
@@ -39,16 +40,95 @@ Aimeos is a full-featured e-commerce package:
 
 ... and [more Aimeos features](https://aimeos.org/features)
 
+Supported languages:
+
+
+<p align="center" style="display: inline;">
+    <a href="https://www.transifex.com/aimeos/"><img src="https://flagicons.lipis.dev/flags/4x3/us.svg" title="English" width="24"></a>
+    <a href="https://www.transifex.com/aimeos/dashboard/all_projects/de/"><img src="https://flagicons.lipis.dev/flags/4x3/de.svg" title="German" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/fr/"><img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" title="French" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/es/"><img src="https://flagicons.lipis.dev/flags/4x3/es.svg" title="Spanish" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/nl/"><img src="https://flagicons.lipis.dev/flags/4x3/nl.svg" title="Dutch" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/it/"><img src="https://flagicons.lipis.dev/flags/4x3/it.svg" title="Italian" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/pt/"><img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" title="Portuguese" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/da/"><img src="https://flagicons.lipis.dev/flags/4x3/dk.svg" title="Danish" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/fi/"><img src="https://flagicons.lipis.dev/flags/4x3/fi.svg" title="Finnish" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/sv/"><img src="https://flagicons.lipis.dev/flags/4x3/sv.svg" title="Swedish" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/no/"><img src="https://flagicons.lipis.dev/flags/4x3/no.svg" title="Norwegian" width="24"></a>
+    &nbsp;&nbsp;&nbsp;
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/pl/"><img src="https://flagicons.lipis.dev/flags/4x3/pl.svg" title="Polish" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/hu/"><img src="https://flagicons.lipis.dev/flags/4x3/hu.svg" title="Hungarian" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/ru/"><img src="https://flagicons.lipis.dev/flags/4x3/ru.svg" title="Russian" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/uk/"><img src="https://flagicons.lipis.dev/flags/4x3/ua.svg" title="Ukrainian" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/hr/"><img src="https://flagicons.lipis.dev/flags/4x3/hr.svg" title="Croatian" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/sl/"><img src="https://flagicons.lipis.dev/flags/4x3/sl.svg" title="Slovenian" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/ro/"><img src="https://flagicons.lipis.dev/flags/4x3/ro.svg" title="Romanian" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/cs/"><img src="https://flagicons.lipis.dev/flags/4x3/cz.svg" title="Czech" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/sr/"><img src="https://flagicons.lipis.dev/flags/4x3/sr.svg" title="Serbian" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/sk/"><img src="https://flagicons.lipis.dev/flags/4x3/sk.svg" title="Slovak" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/et/"><img src="https://flagicons.lipis.dev/flags/4x3/et.svg" title="Estonian" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/lv/"><img src="https://flagicons.lipis.dev/flags/4x3/lv.svg" title="Latvian" width="24"></a>
+    &nbsp;&nbsp;&nbsp;
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/tr/"><img src="https://flagicons.lipis.dev/flags/4x3/tr.svg" title="Turkish" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/ar/"><img src="https://flagicons.lipis.dev/flags/4x3/sa.svg" title="Arabic" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/fa/"><img src="https://flagicons.lipis.dev/flags/4x3/ir.svg" title="Persian" width="24"></a>
+    &nbsp;&nbsp;&nbsp;
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/zh/"><img src="https://flagicons.lipis.dev/flags/4x3/cn.svg" title="Chinese" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/ja/"><img src="https://flagicons.lipis.dev/flags/4x3/jp.svg" title="Japanese" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/id/"><img src="https://flagicons.lipis.dev/flags/4x3/id.svg" title="Indonesian" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/vi/"><img src="https://flagicons.lipis.dev/flags/4x3/vi.svg" title="Vietnamese" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/my/"><img src="https://flagicons.lipis.dev/flags/4x3/my.svg" title="Burmese" width="24"></a>
+     <a href="https://www.transifex.com/aimeos/dashboard/all_projects/ko/"><img src="https://flagicons.lipis.dev/flags/4x3/kr.svg" title="Korean" width="24"></a>
+</p>
+
+
+Check out the demos:
+
+* [Aimeos frontend demo](https://laravel.demo.aimeos.org)
+* [Aimeos admin demo](https://admin.demo.aimeos.org)
+
+## Alternatives
+
+### Full shop application
+
+If you want to set up a new application or test Aimeos, we recommend the Aimeos
+shop distribution. It contains everything for a quick start and you will get a
+fully working online shop in less than 5 minutes:
+
+:star:  [Aimeos shop distribution](https://github.com/aimeos/aimeos)
+
+### Integrate into existing applications
+
+You already have an existing Laravel application and want to add a shop to your
+web site? Install the Aimeos composer package for Laravel and add e-commerce to
+your existing application in minutes:
+
+:star:  [Aimeos Laravel package](https://github.com/aimeos/aimeos-laravel)
+
+## Table of content
+
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Frontend](#frontend)
+- [Backend](#backend)
+- [Customize](#customize)
+- [Multi-vendor](#multi-vendor)
+- [License](#license)
+- [Links](#links)
+
 ## Requirements
 
 The Aimeos shop distribution requires:
 - Linux/Unix, WAMP/XAMP or MacOS environment
 - PHP >= 8.0.10
-- MySQL >= 5.7.8, MariaDB >= 10.2.2
+- MySQL >= 5.7.8, MariaDB >= 10.2.2, PostgreSQL 9.6+, SQL Server 2019+
 - Web server (Apache, Nginx or integrated PHP web server for testing)
 
 If required PHP extensions are missing, `composer` will tell you about the missing
 dependencies.
+
+If you want to upgrade between major versions, please have a look into the
+[upgrade guide](https://aimeos.org/docs/latest/laravel/setup/#upgrade)!
 
 ## Installation
 
