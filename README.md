@@ -6,8 +6,8 @@
 
 :star: Star us on GitHub — it motivates a lot!
 
-[Aimeos](https://aimeos.org/Laravel) is THE professional, full-featured and
-ultra fast headless ecommerce for Laravel!  You can adapt, extend, overwrite
+[Aimeos](https://aimeos.org/Laravel) is THE ultra-fast, cloud-native and
+API-first headless ecommerce for Laravel!  You can adapt, extend, overwrite
 and customize anything to your needs.
 
 ## Features
@@ -16,6 +16,7 @@ Aimeos is a full-featured e-commerce package:
 
 * JSON REST API based on jsonapi.org
 * GraphQL API for administration
+* Perfect fit for AWS, Google, Azure and Kubernetes based clouds
 * Multi vendor, multi channel and multi warehouse
 * From one to 1,000,000,000+ items
 * Extremly fast down to 20ms
@@ -89,14 +90,6 @@ Check out the demos:
 
 ## Alternatives
 
-### Full shop application
-
-If you want to set up a new application or test Aimeos, we recommend the Aimeos
-shop distribution. It contains everything for a quick start and you will get a
-fully working online shop in less than 5 minutes:
-
-:star:  [Aimeos shop distribution](https://github.com/aimeos/aimeos)
-
 ### Integrate into existing applications
 
 You already have an existing Laravel application and want to add a shop to your
@@ -104,6 +97,14 @@ web site? Install the Aimeos composer package for Laravel and add e-commerce to
 your existing application in minutes:
 
 :star:  [Aimeos Laravel package](https://github.com/aimeos/aimeos-laravel)
+
+### Full shop application
+
+If you want to set up a new application or test Aimeos, we recommend the Aimeos
+shop distribution. It contains everything for a quick start and you will get a
+fully working online shop in less than 5 minutes:
+
+:star:  [Aimeos shop distribution](https://github.com/aimeos/aimeos)
 
 ## Table of content
 
@@ -118,8 +119,8 @@ your existing application in minutes:
 
 ## Requirements
 
-The Aimeos shop distribution requires:
-- Linux/Unix, WAMP/XAMP or MacOS environment
+The Aimeos headless distribution requires:
+- AWS, Google, Azure or Kubernetes cloud, Linux/Unix, WAMP/XAMP or MacOS environment
 - PHP >= 8.0.10
 - MySQL >= 5.7.8, MariaDB >= 10.2.2, PostgreSQL 9.6+, SQL Server 2019+
 - Web server (Apache, Nginx or integrated PHP web server for testing)
