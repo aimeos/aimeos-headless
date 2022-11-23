@@ -188,13 +188,54 @@ Use this access token in all further requests as HTTP header:
 curl -X POST "http://127.0.0.1:8000/api/me" -H "Authorization: Bearer eyJ0eXAiOiJKV..."
 ```
 
-
 ## Backend
 
 The Aimeos administration interface will be available at `/admin` in your VHost. When using
 the integrated PHP web server, call this URL: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
 
 [![Aimeos admin backend](https://aimeos.org/fileadmin/aimeos.org/images/aimeos-backend.png?2021.04)](http://admin.demo.aimeos.org/)
+
+## Cloud filesystems
+
+To use cloud storage like AWS S3 compatible object storages, adapt the `resource/fs` sections
+in the `./config/shop.php` file and configure the filesystem like this:
+
+```
+'fs' => [
+	'adapter' => 'FlyAwsS3',
+	'credentials' => [
+		'key' => 'your-key',
+		'secret' => 'your-secret',
+	],
+	'region' => 'your-region',
+	'version' => 'latest|api-version',
+	'bucket' => 'your-bucket-name',
+	'prefix' => 'your-prefix', // optional
+],
+```
+
+For Azure Blob storage use:
+
+```
+'fs' => [
+	'adapter' => 'FlyAzure',
+	'endpoint' => 'DefaultEndpointsProtocol=https;AccountName=your-account;AccountKey=your-api-key',
+	'container' => 'your-container',
+	'prefix' => 'your-prefix', // optional
+],
+```
+
+And for Google Cloud storage:
+
+```
+'fs' => [
+	'adapter' => 'FlyGoogleCloud',
+	'keyFile' => json_decode(file_get_contents('/path/to/keyfile.json'), true), // alternative
+	'keyFilePath' => '/path/to/keyfile.json', // alternative
+	'projectId' => 'myProject', // alternative
+	'prefix' => 'your-prefix' // optional
+],
+```
 
 ## Customize
 
