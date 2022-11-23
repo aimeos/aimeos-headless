@@ -2,7 +2,7 @@
     "name": "aimeos/aimeos-headless",
     "type": "project",
     "description": "Aimeos headless ecommerce system",
-    "keywords": ["aimeos", "headless", "ecommerce", "shop", "laravel", "distribution"],
+    "keywords": ["aimeos", "headless", "cloud", "api", "ecommerce", "shop", "laravel", "distribution"],
     "license": "MIT",
     "require": {
         "php": "^8.0.10",
