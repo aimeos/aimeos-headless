@@ -14,6 +14,7 @@ return [
 		// 'jqadm' => ['prefix' => 'admin/{site}/jqadm', 'middleware' => ['web', 'auth']],
 		// 'jsonadm' => ['prefix' => 'admin/{site}/jsonadm', 'middleware' => ['web', 'auth']],
 		'jsonapi' => ['prefix' => 'jsonapi', 'middleware' => ['api', 'auth.api']],
+		'confirm' => ['middleware' => ['web']],
 		'account' => false,
 		'default' => false,
 		'supplier' => false,
