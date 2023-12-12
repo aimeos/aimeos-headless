@@ -201,6 +201,10 @@ To use cloud storage like AWS S3 compatible object storages, adapt the `resource
 in the `./config/shop.php` file and configure the filesystem like this:
 
 ```
+composer req ai-filesystem league/flysystem-aws-s3-v3
+```
+
+```php
 'fs' => [
 	'adapter' => 'FlyAwsS3',
 	'credentials' => [
@@ -217,6 +221,10 @@ in the `./config/shop.php` file and configure the filesystem like this:
 For Azure Blob storage use:
 
 ```
+composer req ai-filesystem league/flysystem-azure-blob-storage
+```
+
+```php
 'fs' => [
 	'adapter' => 'FlyAzure',
 	'endpoint' => 'DefaultEndpointsProtocol=https;AccountName=your-account;AccountKey=your-api-key',
@@ -228,6 +236,10 @@ For Azure Blob storage use:
 And for Google Cloud storage:
 
 ```
+composer req ai-filesystem league/flysystem-google-cloud-storage
+```
+
+```php
 'fs' => [
 	'adapter' => 'FlyGoogleCloud',
 	'keyFile' => json_decode(file_get_contents('/path/to/keyfile.json'), true), // alternative
