@@ -215,6 +215,7 @@ composer req ai-filesystem league/flysystem-aws-s3-v3
 	'version' => 'latest|api-version',
 	'bucket' => 'your-bucket-name',
 	'prefix' => 'your-prefix', // optional
+    'baseurl' => 's3-domain-and-path'
 ],
 ```
 
@@ -230,6 +231,7 @@ composer req ai-filesystem league/flysystem-azure-blob-storage
 	'endpoint' => 'DefaultEndpointsProtocol=https;AccountName=your-account;AccountKey=your-api-key',
 	'container' => 'your-container',
 	'prefix' => 'your-prefix', // optional
+    'baseurl' => 'azure-domain-and-path'
 ],
 ```
 
@@ -246,6 +248,7 @@ composer req ai-filesystem league/flysystem-google-cloud-storage
 	'keyFilePath' => '/path/to/keyfile.json', // alternative
 	'projectId' => 'myProject', // alternative
 	'prefix' => 'your-prefix' // optional
+    'baseurl' => 'gcloud-domain-and-path'
 ],
 ```
 
