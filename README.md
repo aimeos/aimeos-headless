@@ -121,7 +121,7 @@ fully working online shop in less than 5 minutes:
 
 The Aimeos headless distribution requires:
 - AWS, Google, Azure or Kubernetes cloud, Linux/Unix, WAMP/XAMP or MacOS environment
-- PHP >= 8.0.11 (Aimeos 2022.10.x), PHP >= 8.1 (Aimeos 2023.x+)
+- PHP >= 8.2
 - MySQL >= 5.7.8, MariaDB >= 10.2.2, PostgreSQL 9.6+, SQL Server 2019+
 - Web server (Apache, Nginx or integrated PHP web server for testing)
 
@@ -133,7 +133,7 @@ If you want to upgrade between major versions, please have a look into the
 
 ## Installation
 
-To install the Aimeos shop application, you need [composer 2.1+](https://getcomposer.org).
+To install the Aimeos shop application, you need [composer 2.2+](https://getcomposer.org).
 On the CLI, execute this command for a complete installation including a working setup:
 
 ```
