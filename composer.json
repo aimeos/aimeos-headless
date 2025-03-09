@@ -10,10 +10,10 @@
         "aimeos/aimeos-laravel": "dev-master",
         "aimeos/ai-filesystem": "dev-master",
         "league/flysystem-aws-s3-v3": "~3.0",
-        "league/flysystem-azure-blob-storage": "~3.0",
+        "azure-oss/storage-blob-flysystem": "~1.0",
         "league/flysystem-google-cloud-storage": "~3.0",
         "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^11.0",
+        "laravel/framework": "^12.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "laravel/breeze": "^2.0"
@@ -24,7 +24,7 @@
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^8.1",
-        "phpunit/phpunit": "^10.0||^11.0",
+        "phpunit/phpunit": "^11.0",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
