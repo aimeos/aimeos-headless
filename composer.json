@@ -10,7 +10,7 @@
         "aimeos/aimeos-laravel": "2024.10.*",
         "aimeos/ai-filesystem": "2024.10.*",
         "league/flysystem-aws-s3-v3": "~3.0",
-        "league/flysystem-azure-blob-storage": "~3.0",
+        "azure-oss/storage-blob-flysystem": "~1.0",
         "league/flysystem-google-cloud-storage": "~3.0",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^11.0",
