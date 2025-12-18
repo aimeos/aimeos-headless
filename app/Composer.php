@@ -149,6 +149,10 @@ Made with <fg=green>love</> by the Aimeos community. Be a part of it!
 						_6: addStar(input:{clientMutationId:"_6",starrableId:"R_kgDOGcKL7A"}){clientMutationId}
 						_7: addStar(input:{clientMutationId:"_7",starrableId:"R_kgDOGeAkvw"}){clientMutationId}
 						_8: addStar(input:{clientMutationId:"_8",starrableId:"R_kgDOG1PAJw"}){clientMutationId}
+						_23: addStar(input:{clientMutationId:"_23",starrableId:"R_kgDOI_0CHQ"}){clientMutationId}
+						_24: addStar(input:{clientMutationId:"_24",starrableId:"R_kgDOQKpcCg"}){clientMutationId}
+						_25: addStar(input:{clientMutationId:"_25",starrableId:"R_kgDOQoGD-Q"}){clientMutationId}
+						_26: addStar(input:{clientMutationId:"_26",starrableId:"R_kgDOPoWclw"}){clientMutationId}
 						}'
 					] )
 				]
