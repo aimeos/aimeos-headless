@@ -1,5 +1,7 @@
 <?php
 
+$mcpauth = env( 'SHOP_MCP_AUTH' ) === 'passport' ? ['auth:mcp', 'Laravel\Passport\Http\Middleware\CheckToken:mcp:use'] : ['auth:sanctum'];
+
 return [
 
 	'apc_enabled' => false, // enable for maximum performance if APCu is availalbe
@@ -14,6 +16,7 @@ return [
 		// 'jqadm' => ['prefix' => 'admin/{site}/jqadm', 'middleware' => ['web', 'auth']],
 		// 'jsonadm' => ['prefix' => 'admin/{site}/jsonadm', 'middleware' => ['web', 'auth']],
 		'jsonapi' => ['prefix' => 'jsonapi', 'middleware' => ['api', 'auth.api']],
+		'mcp' => ['prefix' => 'admin/{site}/mcp', 'middleware' => array_merge( ['api'], $mcpauth )],
 		'confirm' => ['middleware' => ['web']],
 		'account' => false,
 		'default' => false,

@@ -44,6 +44,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'mcp' => [
+            'driver' => 'passport',
+            'provider' => 'oauth-users',
+        ],
     ],
 
     /*
@@ -67,6 +71,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+
+        'oauth-users' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\OAuthUser::class,
         ],
 
         // 'users' => [

@@ -56,6 +56,20 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Authentication for the MCP server
+    |--------------------------------------------------------------------------
+    |
+    | Possible values: "sanctum" and "passport"
+    | Sanctum uses API tokens created for each user while Passport (requires
+    | "composer require laravel/passport") offers an OAuth login so remote AI
+    | clients like Claude.ai or ChatGPT can connect without copying tokens.
+    |
+    */
+
+    'shop_mcp_auth' => env('SHOP_MCP_AUTH', 'sanctum'),
+
     'asset_url' => env('ASSET_URL'),
 
     /*
