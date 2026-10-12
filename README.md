@@ -1,5 +1,5 @@
 <a href="https://aimeos.org/">
-    <img src="https://aimeos.org/fileadmin/template/icons/logo.png" alt="Aimeos logo" title="Aimeos" align="right" height="60" />
+    <img src="https://aimeos.org/images/logo.png" alt="Aimeos logo" title="Aimeos" align="right" height="60" />
 </a>
 
 # Aimeos headless distribution
@@ -194,7 +194,7 @@ curl -X POST "http://127.0.0.1:8000/api/me" -H "Authorization: Bearer eyJ0eXAiOi
 The Aimeos administration interface will be available at `/admin` in your VHost. When using
 the integrated PHP web server, call this URL: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
 
-[![Aimeos admin backend](https://aimeos.org/fileadmin/aimeos.org/images/aimeos-backend.png?2021.04)](http://admin.demo.aimeos.org/)
+[![Aimeos admin backend](https://aimeos.org/images/aimeos-backend.png)](http://admin.demo.aimeos.org/)
 
 ## MCP server
 
