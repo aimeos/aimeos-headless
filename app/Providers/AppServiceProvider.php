@@ -33,6 +33,14 @@ class AppServiceProvider extends ServiceProvider
             return app( '\Aimeos\Shop\Base\Support' )->checkUserGroup( $user, $roles );
         });
 
+        // APP_URL instead of the request host because the host can be forged to steal the token
+        \Illuminate\Auth\Notifications\ResetPassword::createUrlUsing( function( $notifiable, $token ) {
+            return rtrim( config( 'app.url' ), '/' ) . route( 'password.reset', [
+                'token' => $token,
+                'email' => $notifiable->getEmailForPasswordReset(),
+            ], false );
+        });
+
         // OAuth login and consent for MCP clients
         if( config( 'app.shop_mcp_auth' ) === 'passport' ) {
             \Laravel\Passport\Passport::authorizationView( 'auth.oauth-authorize' );

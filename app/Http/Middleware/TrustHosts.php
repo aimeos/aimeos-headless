@@ -13,8 +13,11 @@ class TrustHosts extends Middleware
      */
     public function hosts()
     {
-        return [
-            $this->allSubdomainsOfApplicationUrl(),
-        ];
+        $hosts = array_filter(array_map('trim', explode(',', (string) config('app.trusted_hosts', ''))));
+
+        return array_merge(
+            [$this->allSubdomainsOfApplicationUrl(), '^10\.\d+\.\d+\.\d+$'], // private IPs for Kubernetes probe checks
+            array_map(fn($host) => '^' . preg_quote(strtolower($host)) . '$', $hosts)
+        );
     }
 }
